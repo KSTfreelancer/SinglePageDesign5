@@ -1,0 +1,316 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.heder{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(224,9,30,0.7),rgba(4,9,30,0.7)),url(media/background.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    
+}
+.logo a img{
+    height: 50px;
+    width: 250px;
+    
+}
+.logo{
+    display: inline-block;
+}
+.nav_link{
+    display: inline-block;
+    float: right;
+}
+.nav_link ul li{
+    height: 50px;
+    width: 150px;
+    line-height: 50px;
+    float: left;
+    text-align: center;
+    list-style: none;
+}
+.nav_link ul li a{
+    text-decoration: none;
+    color:white;
+    display: block;
+    
+}
+.nav_link ul li ::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: green;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+    
+}
+.nav_link ul li :hover::after{
+    width: 60%;
+    
+}
+.text_box{
+    width: 90%;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    text-align: center;
+}
+.text_box h1{
+    font-size: 52px;
+}
+.text_box p{
+    margin: 10px 0 40px;
+    font-size: 22px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+}
+.hero_btn{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 8px 34px;
+    background-color: transparent;
+    position: relative;
+    
+}
+.hero_btn:hover{
+    background-color: red;
+    border: 1px solid red;
+    transition: 1s;
+}
+
+
+/*corse=================================*/
+
+.course{
+    width: 80%;
+    padding-top: 100px;
+    text-align: center;
+    margin: auto;
+}
+.course h1{
+    font-size: 36px;
+    font-weight: 300;
+}
+.course p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.course-col{
+    flex-basis: 31%;
+    background-color: #fff3f3;
+    padding: 20px 12px;
+    margin-bottom: 5%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.course-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+.campus{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+campus h1{
+    font-size: 36px;
+    font-weight: 300;
+}
+.campus p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 10px;
+    line-height: 22px;
+}
+
+.campus-col{
+    flex-basis: 32%;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    height: 400px;
+    margin-bottom: 50px;
+    
+    
+}
+.campus-col img{
+    width: 100%;
+    height: 100%;
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.layer:hover{
+    background: rgba(0,0,0,0.7);
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    transition: translatex(-50%);
+    position: absolute;
+    transition: .5s;
+    
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+/*facitilites=====================*/
+.facilities{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    
+}
+.facilities h1{
+    font-size: 36px;
+    font-weight: 300;
+    padding-bottom: 10px;
+    
+}
+.facilities p{
+    font-size: 14px;
+    font-weight: 300px;
+    line-height: 22px;
+    color: #777;
+}
+.facilities-col{
+    flex-basis: 32%;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 5%;
+    text-align: left;
+}
+.facilities-col img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.facilities-col h3{
+    text-align: left;
+}
+
+/*testimonial=============================*/
+.testimonial{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+.testimonial-col{
+    flex-basis: 43%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #fff3f3;
+    padding: 25px 15px;
+    cursor: pointer;
+    display: flex;
+}
+.testimonial-col img{
+    height: 50px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+.testimonial-col p{
+    padding: 0px;
+}
+.testimonial-col h3{
+    margin-top: 15px;
+    font-size: 24px;
+    text-align: left;
+    display: block;
+    width: 100%;
+}
+.testimonial-col i{
+    color: #f44336;
+}
+.cta{
+    width: 80%;
+    margin: 100px auto;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(1.jpg);
+    background-size: cover;
+    border-radius: 10px;
+    padding: 70px 0px;
+    text-align: center;
+}
+.cta h1{
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.cta a{
+    padding: 15px;
+    background-color:rgba(222,0, 0,0.3);
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    transition: .5s;
+}
+.cta a:hover{
+    background-color:rgb(222,0,0);
+}
+
+/*Footer===========================*/
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+.footer h4{
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 32px;
+}
+.icon{
+    text-align: center;
+    color: black;
+    margin: 20px 0;
+    
+}
+.icon .fab{
+    padding: 0 10px;
+}
+
+.hard{
+    color: red;
+    
+}
